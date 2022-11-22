@@ -118,26 +118,38 @@ function App() {
           <div className='utility'>
 
             <div className='medkit'>
-              <div className='bleeding item-inner-border item-background'>
-                <div className='bleeding-icon icon'></div>
+
+              <div className='medkit-top'>
+                <div className='bleeding item-inner-border item-background'>
+                  <div className='bleeding-icon icon'></div>
+                </div>
+                <div className='radiation-counter item-inner-border item-background'>
+                  <div className='radiation-counter-icon icon'></div>
+                </div>
               </div>
-              <div className='trauma item-inner-border item-background'>
-                <div className='trauma-icon icon'></div>
+
+              <div className='medkit-bottom'>
+                <div className='trauma item-inner-border item-background'>
+                  <div className='trauma-icon icon'></div>
+                </div>
+                <div className='buffing item-inner-border item-background'>
+                  <div className='buffing-icon icon'></div>
+                </div>
+                <div className='cleansing item-inner-border item-background'>
+                  <div className='cleansing-icon icon'></div>
+                </div>
               </div>
-              <div className='buffing item-inner-border item-background'>
-                <div className='buffing-icon icon'></div>
-              </div>
-              <div className='cleansing item-inner-border item-background'>
-                <div className='cleansing-icon icon'></div>
-              </div>
+
             </div>
 
             <div className='tools'>
+
               <div className='tools-left'>
                 <div className='artifact-container item-inner-border item-background'>
                   <div className='artifact-container-icon icon'></div>
                 </div>
               </div>
+
               <div className='tools-right'>
                 <div className='activator item-inner-border item-background'>
                   <div className='activator-icon icon'></div>
@@ -146,9 +158,7 @@ function App() {
                   <div className='scanner-icon icon'></div>
                 </div>
               </div>
-              {/*<div className='radiation-counter item-inner-border item-background'>
-                <div className='radiation-counter-icon icon'></div>
-              </div>*/}
+
             </div>
 
           </div>

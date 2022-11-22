@@ -187,12 +187,12 @@ body {
 
         .secondary-middle .inner-border-right {
           border-right: 5px solid transparent;
-          border-image: url('/public/InvertoryBorderInner2.png') 15 round; 
+          border-image: url('/public/InvertoryBorderInner.png') 15 round; 
         }
 
         .secondary-middle .inner-border-bottom {
           border-bottom: 5px solid transparent;
-          border-image: url('/public/InvertoryBorderInner2.png') 15 round; 
+          border-image: url('/public/InvertoryBorderInner.png') 15 round; 
         }
 
           .secondary-middle .magazine .magazine-icon {
@@ -216,30 +216,49 @@ body {
       .utility .medkit {
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
         gap: 5px;
       }
 
-        .bleeding, .trauma, .buffing, .cleansing {
+        .medkit .medkit-top {
           display: grid;
-          padding: 3px;
+          grid-template-columns: 1fr 2fr;
+          gap: 5px;
         }
 
-          .bleeding-icon {
-            background-image: url('http://localhost:3000/Bandages.png');
+        .medkit .medkit-bottom {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr; 
+          gap: 5px;        
+        }
+
+          .bleeding, .trauma, .buffing, .cleansing {
+            display: grid;
+            padding: 1px;
           }
 
-          .trauma-icon {
-            background-image: url('http://localhost:3000/Stimulator.png');
+          .bleeding {
+            padding: 0;
           }
 
-          .buffing-icon {
-            background-image: url('http://localhost:3000/Epinehprine.png');
+          .cleansing {
+            padding: 3px;
           }
 
-          .cleansing-icon {
-            background-image: url('http://localhost:3000/RadiationMeds.png');
-          }
+            .bleeding-icon {
+              background-image: url('http://localhost:3000/Bandage.png');
+            }
+
+            .trauma-icon {
+              background-image: url('http://localhost:3000/Stimulator.png');
+            }
+
+            .buffing-icon {
+              background-image: url('http://localhost:3000/Epinephrine.png');
+            }
+
+            .cleansing-icon {
+              background-image: url('http://localhost:3000/RadiationMeds.png');
+            }
 
       .utility .tools {
         display: grid;
@@ -263,7 +282,7 @@ body {
           }
 
           .scanner {
-            padding: 1px;
+            padding: 0 0 1px;
           }
 
           .artifact-container {
@@ -271,7 +290,7 @@ body {
           }
 
             .activator .activator-icon {
-              background-image: url('http://localhost:3000/Activator.png');
+              background-image: url('http://localhost:3000/BoxOfBolts.png');
             }
           
             .scanner .scanner-icon {
