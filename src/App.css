@@ -1,38 +1,287 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  display: grid;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url('http://localhost:3000/background.png');
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  opacity: 0.9;
+  margin: 10px;
+  gap: 10px;
+  min-height: 630px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .item {
+  display: grid;
+  background-image: url('http://localhost:3000/InventoryBackLarge.png');
+  position: relative;
+  color: #fff;
+  grid-template-rows: 15fr 6fr 6fr;
+  gap: 5px;
+  /* padding: 0 15px; */
 }
+
+.item-main-border {
+  border: 20px solid transparent; 
+  border-image: url("/public/InventoryBorder.png") 25 round;
+}
+
+.item-outer-border {
+  border: 10px solid transparent; 
+  border-image: url("/public/InventoryBorderOuter.png") 25 round;
+}
+
+.item-inner-border {
+  border: 10px solid transparent; 
+  border-image: url("/public/InvertoryBorderInner2.png") 15 round;
+}
+
+.item-background {
+  background-image: url('http://localhost:3000/InventoryBackLightSmall.png');
+}
+
+.icon {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}
+
+.container .item .item-title {
+  margin: 0 auto;
+}
+
+  .item .main-equipment {
+    display: grid;
+    grid-template-columns: 3fr 4.5fr 3fr;
+  }
+
+    .main-equipment .left-column, 
+    .main-equipment .right-column {
+      display: grid;
+      grid-template-rows: 9fr 3fr;
+      gap: 5px;
+    }
+
+    .main-equipment .middle-column {
+      display: grid;
+      grid-template-rows: 3fr 5fr 4fr;
+      gap: 5px;
+    }
+
+      .left-primary-weapon, .left-secondary-weapon, .left-teriary-weapon,
+      .right-primary-weapon, .right-secondary-weapon, .right-teriary-weapon,
+      .helmet, .helmet-center, .armor, .armor-center, .backpack, .backpack-center {
+        display: grid;
+      }
+
+      .main-equipment .left-primary-weapon {
+        padding: 5px;
+      }
+
+        .main-equipment .left-primary-weapon .left-primary-weapon-icon {
+          background-image: url('http://localhost:3000/SIG550-Vertical.png');
+        }
+
+      .main-equipment .left-secondary-weapon {
+        Padding: 10px;
+      }
+
+        .main-equipment .left-secondary-weapon .left-secondary-weapon-icon {
+          background-image: url('http://localhost:3000/Deagle.png');
+        }
+
+      .main-equipment .middle-column .helmet {
+        grid-template-columns: 1fr 24fr 1fr;
+      }
+
+      .main-equipment .middle-column .helmet .helmet-center {
+        padding: 5px;
+      }
+
+        .helmet .helmet-center .helmet-icon {
+          background-image: url('http://localhost:3000/helmet.png');
+        }      
+
+      .main-equipment .middle-column .armor {
+        grid-template-columns: 1fr 24fr 1fr;
+      }
+
+        .main-equipment .middle-column .armor .armor-center {
+          padding: 5px;
+        }
+
+          .armor .armor-center .armor-icon {
+            background-image: url('http://localhost:3000/armor.png');
+          } 
+
+      .main-equipment .middle-column .backpack {
+        grid-template-columns: 1fr 24fr 1fr;
+      }
+
+        .main-equipment .middle-column .backpack .backpack-center {
+          padding: 3px;
+        }
+
+          .main-equipment .middle-column .backpack .backpack-center .backpack-icon {
+            background-image: url('http://localhost:3000/BackpackAdvanced.png');
+          }
+
+      .main-equipment .right-primary-weapon {
+        padding: 5px;
+      }
+
+        .main-equipment .right-primary-weapon .right-primary-weapon-icon {
+          background-image: url('http://localhost:3000/SVD-Vertical.png');
+        }
+
+        .main-equipment .right-secondary-weapon .right-secondary-weapon-icon {
+          background-image: url('http://localhost:3000/UMP.png');
+        }
+
+    .item .secondary-equipment {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr 1fr;
+      gap: 5px;
+    }
+
+      .secondary-left, .knife, .binoculars, 
+      .secondary-middle, .magazine, .magazine-belt,
+      .secondary-right, .pda, .lightsource,
+      .utility {
+        display: grid;
+      }
+
+      .secondary-left, .secondary-right {
+        gap: 5px;
+        grid-template-rows: 1fr 1fr;
+      }
+
+        .knife, .binoculars, .pda, .lightsource {
+          padding: 3px;
+        }
+
+          .secondary-left .knife-icon {
+            background-image: url('http://localhost:3000/Knife.png');
+          }
+
+          .secondary-left .binoculars-icon {
+            background-image: url('http://localhost:3000/Binoculars.png');
+          }
+
+        .secondary-middle .magazine-belt {
+          grid-template-rows: 1fr 0.9fr;
+          grid-template-columns: 1fr 1fr 1fr 0.85fr;
+        }
+
+        .magazine {
+           padding: 3px;
+        }
+
+        .secondary-middle .inner-border-right {
+          border-right: 5px solid transparent;
+          border-image: url('/public/InvertoryBorderInner2.png') 15 round; 
+        }
+
+        .secondary-middle .inner-border-bottom {
+          border-bottom: 5px solid transparent;
+          border-image: url('/public/InvertoryBorderInner2.png') 15 round; 
+        }
+
+          .secondary-middle .magazine .magazine-icon {
+            background-image: url('http://localhost:3000/Magazine.png');
+          }        
+
+          .secondary-right .pda-icon {
+            background-image: url('http://localhost:3000/Pda.png');
+          }
+
+          .secondary-right .lightsource-icon {
+            background-image: url('http://localhost:3000/Headlamp.png');
+          }
+        
+    .utility {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+    }
+
+      .utility .medkit {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+      }
+
+        .bleeding, .trauma, .buffing, .cleansing {
+          display: grid;
+          padding: 3px;
+        }
+
+          .bleeding-icon {
+            background-image: url('http://localhost:3000/Bandages.png');
+          }
+
+          .trauma-icon {
+            background-image: url('http://localhost:3000/Stimulator.png');
+          }
+
+          .buffing-icon {
+            background-image: url('http://localhost:3000/Epinehprine.png');
+          }
+
+          .cleansing-icon {
+            background-image: url('http://localhost:3000/RadiationMeds.png');
+          }
+
+      .utility .tools {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 5px;
+      }
+
+        .utility .tools .tools-left {
+          display: grid;
+          gap: 5px;
+        }
+
+        .utility .tools .tools-right {
+          display: grid;
+          gap: 5px;
+          grid-template-rows: 1fr 1fr;
+        }
+
+          .activator, .scanner, .artifact-container, .radiation-counter {
+            display: grid;
+          }
+
+          .scanner {
+            padding: 1px;
+          }
+
+          .artifact-container {
+            padding: 5px;
+          }
+
+            .activator .activator-icon {
+              background-image: url('http://localhost:3000/Activator.png');
+            }
+          
+            .scanner .scanner-icon {
+              background-image: url('http://localhost:3000/Scanner.png');
+            }
+
+            .artifact-container .artifact-container-icon {
+              background-image: url('http://localhost:3000/ArtifactContainer.png');
+            } 
+
+            .radiation-counter-icon {
+              background-image: url('http://localhost:3000/RadiationCounter.png');
+            }
