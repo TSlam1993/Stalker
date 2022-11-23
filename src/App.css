@@ -16,7 +16,7 @@ body {
   opacity: 0.9;
   margin: 10px;
   gap: 10px;
-  min-height: 630px;
+  min-height: 550px;
 }
 
 .container .item {
@@ -91,7 +91,7 @@ body {
         }
 
       .main-equipment .left-secondary-weapon {
-        Padding: 10px;
+        Padding: 7px;
       }
 
         .main-equipment .left-secondary-weapon .left-secondary-weapon-icon {
@@ -168,6 +168,10 @@ body {
           padding: 3px;
         }
 
+        .knife {
+          padding: 6px;
+        }
+
           .secondary-left .knife-icon {
             background-image: url('http://localhost:3000/Knife.png');
           }
@@ -242,6 +246,10 @@ body {
 
           .cleansing {
             padding: 3px;
+          }
+
+          .buffing {
+            padding: 2px;
           }
 
             .bleeding-icon {
