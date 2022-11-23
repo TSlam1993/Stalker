@@ -12,7 +12,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 0.8fr 1fr;
   opacity: 0.9;
   margin: 10px;
   gap: 10px;
@@ -31,7 +31,7 @@ body {
 
 .item-main-border {
   border: 20px solid transparent; 
-  border-image: url("/public/InventoryBorder.png") 25 round;
+  border-image: url("/public/InventoryBorderBetter.png") 25 round;
 }
 
 .item-outer-border {
@@ -164,8 +164,8 @@ body {
         grid-template-rows: 1fr 1fr;
       }
 
-        .knife, .binoculars, .pda, .lightsource {
-          padding: 3px;
+        .binoculars, .pda, .lightsource {
+          padding: 2px;
         }
 
         .knife {
