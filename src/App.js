@@ -15,15 +15,23 @@ function App() {
           <div className='main-equipment'>
 
             <div className='left-column'>
+
               <div className='left-primary-weapon item-inner-border item-background'>
                 <div className='left-primary-weapon-icon icon'></div>
               </div>
               <div className='left-secondary-weapon item-inner-border item-background'>
                 <div className='left-secondary-weapon-icon icon'></div>
               </div>
-              {/* <div className='left-teriary-weapon item-inner-border item-background'>
-                <div className='left-teriary-weapon-icon'></div>
-              </div> */}
+
+              <div className='secondary-left'>
+                <div className='knife item-inner-border item-background'>
+                  <div className='knife-icon icon'></div>
+                </div>
+                <div className='binoculars item-inner-border item-background'>
+                  <div className='binoculars-icon icon'></div>
+                </div>
+              </div>
+
             </div>
 
             <div className='middle-column'>
@@ -41,6 +49,38 @@ function App() {
                 </div>
                 <div className='armor-right'></div>
               </div>
+
+              <div className='magazine-belt'>
+                <div className='magazine-belt-left'></div>
+                <div className='magazine-belt-middle item-inner-border item-background'>
+                  <div className='magazine inner-border-right inner-border-bottom'>
+                    <div className='magazine-icon icon'></div>
+                  </div>
+                  <div className='magazine inner-border-right inner-border-bottom'>
+                    <div className='magazine-icon icon'></div>
+                  </div>
+                  <div className='magazine inner-border-right inner-border-bottom'>
+                    <div className='magazine-icon icon'></div>
+                  </div>
+                  <div className='magazine inner-border-bottom'>
+                    <div className='magazine-icon icon'></div>
+                  </div>
+                  <div className='magazine inner-border-right'>
+                    <div className='magazine-icon icon'></div>
+                  </div>
+                  <div className='magazine inner-border-right'>
+                    <div className='magazine-icon icon'></div>
+                  </div>
+                  <div className='magazine inner-border-right'>
+                    <div className='magazine-icon icon'></div>
+                  </div>
+                  <div className='magazine'>
+                    <div className='magazine-icon icon'></div>
+                  </div>
+                </div>
+                <div className='magazine-belt-right'></div>
+              </div>
+
               <div className='backpack'>
                 <div className='backpack-left'></div>
                 <div className='backpack-center item-inner-border item-background'>
@@ -48,69 +88,27 @@ function App() {
                 </div>
                 <div className='backpack-right'></div>
               </div>
+              
             </div>
 
             <div className='right-column'>
+
               <div className='right-primary-weapon item-inner-border item-background'>
                 <div className='right-primary-weapon-icon icon'></div>
               </div>
               <div className='right-secondary-weapon item-inner-border item-background'>
                 <div className='right-secondary-weapon-icon icon'></div>
               </div>
-              {/* <div className='right-teriary-weapon item-inner-border item-background'>
-                <div className='right-teriary-weapon-icon'></div>
-              </div> */}
-            </div>
 
-          </div>
-
-          <div className='secondary-equipment'>
-
-            <div className='secondary-left'>
-              <div className='knife item-inner-border item-background'>
-                <div className='knife-icon icon'></div>
-              </div>
-              <div className='binoculars item-inner-border item-background'>
-                <div className='binoculars-icon icon'></div>
-              </div>
-            </div>
-
-            <div className='secondary-middle'>
-              <div className='magazine-belt item-inner-border item-background'>
-                <div className='magazine inner-border-right inner-border-bottom'>
-                  <div className='magazine-icon icon'></div>
+              <div className='secondary-right'>
+                <div className='pda item-inner-border item-background'>
+                  <div className='pda-icon icon'></div>
                 </div>
-                <div className='magazine inner-border-right inner-border-bottom'>
-                  <div className='magazine-icon icon'></div>
-                </div>
-                <div className='magazine inner-border-right inner-border-bottom'>
-                  <div className='magazine-icon icon'></div>
-                </div>
-                <div className='magazine inner-border-bottom'>
-                  <div className='magazine-icon icon'></div>
-                </div>
-                <div className='magazine inner-border-right'>
-                  <div className='magazine-icon icon'></div>
-                </div>
-                <div className='magazine inner-border-right'>
-                  <div className='magazine-icon icon'></div>
-                </div>
-                <div className='magazine inner-border-right'>
-                  <div className='magazine-icon icon'></div>
-                </div>
-                <div className='magazine'>
-                  <div className='magazine-icon icon'></div>
+                <div className='lightsource item-inner-border item-background'>
+                  <div className='lightsource-icon icon'></div>
                 </div>
               </div>
-            </div>
 
-            <div className='secondary-right'>
-              <div className='pda item-inner-border item-background'>
-                <div className='pda-icon icon'></div>
-              </div>
-              <div className='lightsource item-inner-border item-background'>
-                <div className='lightsource-icon icon'></div>
-              </div>
             </div>
 
           </div>
@@ -172,7 +170,6 @@ function App() {
 
     </div>
   );
-
 }
 
 export default App;

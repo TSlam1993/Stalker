@@ -24,7 +24,7 @@ body {
   background-image: url('http://localhost:3000/InventoryBackLarge.png');
   position: relative;
   color: #fff;
-  grid-template-rows: 15fr 6fr 6fr;
+  grid-template-rows: 21fr 6fr;
   gap: 5px;
   /* padding: 0 15px; */
 }
@@ -66,13 +66,13 @@ body {
     .main-equipment .left-column, 
     .main-equipment .right-column {
       display: grid;
-      grid-template-rows: 9fr 3fr;
+      grid-template-rows: 9fr 3fr 5fr;
       gap: 5px;
     }
 
     .main-equipment .middle-column {
       display: grid;
-      grid-template-rows: 3fr 5fr 4fr;
+      grid-template-rows: 2fr 3fr 3fr 2.5fr;
       gap: 5px;
     }
 
@@ -126,11 +126,15 @@ body {
         grid-template-columns: 1fr 24fr 1fr;
       }
 
-        .main-equipment .middle-column .backpack .backpack-center {
+        .backpack .backpack-center {
           padding: 3px;
         }
 
-          .main-equipment .middle-column .backpack .backpack-center .backpack-icon {
+        .secondary-middle .backpack .backpack-center {
+          padding: 7px;
+        }
+
+          .backpack .backpack-center .backpack-icon {
             background-image: url('http://localhost:3000/BackpackAdvanced.png');
           }
 
@@ -180,7 +184,12 @@ body {
             background-image: url('http://localhost:3000/Binoculars.png');
           }
 
-        .secondary-middle .magazine-belt {
+        .middle-column .magazine-belt {
+          grid-template-columns: 1fr 24fr 1fr;
+        }
+
+        .magazine-belt-middle {
+          display: grid;
           grid-template-rows: 1fr 0.9fr;
           grid-template-columns: 1fr 1fr 1fr 0.85fr;
         }
@@ -189,25 +198,25 @@ body {
            padding: 3px;
         }
 
-        .secondary-middle .inner-border-right {
+        .inner-border-right {
           border-right: 5px solid transparent;
           border-image: url('/public/InvertoryBorderInner.png') 15 round; 
         }
 
-        .secondary-middle .inner-border-bottom {
+        .inner-border-bottom {
           border-bottom: 5px solid transparent;
           border-image: url('/public/InvertoryBorderInner.png') 15 round; 
         }
 
-          .secondary-middle .magazine .magazine-icon {
+          .magazine .magazine-icon {
             background-image: url('http://localhost:3000/Magazine.png');
           }        
 
-          .secondary-right .pda-icon {
+          .pda-icon {
             background-image: url('http://localhost:3000/Pda.png');
           }
 
-          .secondary-right .lightsource-icon {
+          .lightsource-icon {
             background-image: url('http://localhost:3000/Headlamp.png');
           }
         
